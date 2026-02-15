@@ -6,4 +6,5 @@ export type Project = {
   technologies: string[];
   imgURL1: string;
   imgURL2: string;
+  inDevelopment?: boolean;
 };

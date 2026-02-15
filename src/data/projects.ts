@@ -1,6 +1,27 @@
 import { Project } from "@/types/Project";
 
 export const projects: Project[] = [
+    {
+    title: "HrzNovels Library",
+    description:
+      "Full-stack web app for browsing and reading Chinese web novels. Features advanced filtering by genres/tags, search, sorting (ASC/DESC), user reviews, ratings, bookmarks, and authentication. Built with Next.js 15, NestJS, TypeORM, and PostgreSQL.",
+    demoLink: "https://hrznovels-client.vercel.app/",
+    codeLink: "https://github.com/horizon-git/hrznovels-client",
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Redux Toolkit",
+      "Material-UI",
+      "SCSS",
+      "NestJS",
+      "TypeORM",
+      "PostgreSQL",
+    ],
+    imgURL1: "/library1.png",
+    imgURL2: "/library2.png",
+    inDevelopment: true,
+  },
   {
     title: "WeatherApp",
     description:
@@ -104,25 +125,5 @@ export const projects: Project[] = [
     technologies: ["HTML5", "Sass(SCSS)", "BEM"],
     imgURL1: "/nothing1.png",
     imgURL2: "/nothing2.png",
-  },
-  {
-    title: "HrzNovels Library",
-    description:
-      "Full-stack web app for browsing and reading Chinese web novels. Features advanced filtering by genres/tags, search, sorting (ASC/DESC), user reviews, ratings, bookmarks, and authentication. Built with Next.js 15, NestJS, TypeORM, and PostgreSQL.",
-    demoLink: "https://hrznovels-client.vercel.app/",
-    codeLink: "https://github.com/horizon-git/hrznovels-client",
-    technologies: [
-      "Next.js",
-      "React",
-      "TypeScript",
-      "Redux Toolkit",
-      "Material-UI",
-      "SCSS",
-      "NestJS",
-      "TypeORM",
-      "PostgreSQL",
-    ],
-    imgURL1: "/library1.png",
-    imgURL2: "/library2.png",
   },
 ];

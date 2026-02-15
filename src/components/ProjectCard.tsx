@@ -11,7 +11,13 @@ export default function ProjectCard({ project }: Props) {
   return (
     <div className="flex flex-col w-[376px] sm:w-[264px]">
       <Link href={project.demoLink} className="transition-all hover:scale-110">
-        <div className="transition-all p-2 border border-slate-800 relative h-[200px] w-full sm:h-[148.5px] hover:rounded-tl-xl hover:rounded-br-2xl">
+        <div className="transition-all p-2 border border-slate-800 relative h-[200px] w-full sm:h-[148.5px] hover:rounded-tl-xl hover:rounded-br-2xl overflow-hidden">
+          {project.inDevelopment && (
+            <div className="absolute top-3 left-3 bg-[#842D54] text-white text-xs font-semibold uppercase px-4 py-2 rounded-md z-20 shadow-lg border border-white/20">
+              Work in progress...
+            </div>
+          )}
+
           <div className="absolute top-[10px] right-[10px] ring-1 ring-[#842D54] rounded-md overflow-hidden sm:hidden md:flex">
             <div className="relative w-[240px] h-[135px] sm:w-[216px] sm:h-[121.5px]">
               <Image src={project.imgURL2} alt={project.title} fill />
